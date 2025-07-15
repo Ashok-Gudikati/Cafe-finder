@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>☕ Discover Cafes Around You Instantly</h1>
+
+    <div id="mapContainer">
+      <canvas id="mapCanvas" width="300" height="300"></canvas>
+      <div class="location-display" id="locationText">
+        Fetching your location...
+      </div>
+      <button id="refreshBtn">📍 Refresh Location</button>
+    </div>
+
+    <h2>Recommended Cafes</h2>
+    <div class="cafes">
+      <div class="cafe">
+        <img
+          data-src="burger.jpg"
+          alt="Cafe Aroma"
+          onerror="this.onerror=null;this.src='https://dummyimage.com/250x160/cccccc/000000&text=No+Image';"
+        />
+        <h3>Cafe Aroma</h3>
+      </div>
+      <div class="cafe">
+        <img
+          data-src="drink.jpg"
+          alt="Brew Bros"
+          onerror="this.onerror=null;this.src='https://dummyimage.com/250x160/cccccc/000000&text=No+Image';"
+        />
+        <h3>Brew Bros</h3>
+      </div>
+      <div class="cafe">
+        <img
+          data-src="Coffee.jpg"
+          alt="Coffee Spot"
+          onerror="this.onerror=null;this.src='https://dummyimage.com/250x160/cccccc/000000&text=No+Image';"
+        />
+        <h3>Coffee Spot</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
